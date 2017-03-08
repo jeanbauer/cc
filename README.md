@@ -155,7 +155,7 @@ Dentro do _time sharing_ temos o:
 - Colaborativo: Windows usava até o 3.1.
 SO: _"Eu te dou a CPU por um tempo, e.g. 5 milisegundos, passou esse tempo, devolva para mim que preciso entregar para outro processo."_
 Era muito fácil fazer um programa que travasse a máquina, ele pegava por um tempo e não devolvia. Era fácil cometer esse erro.
-Funcionou um bom tempo com interrupções (hardware tinha suporte).
+Funcionou um bom tempo com interrupções (hardware tinha suporte *só não era usado*).
 
 
 - Preemptivo
