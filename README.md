@@ -165,3 +165,75 @@ Ou seja, dou a CPU por uma fatia de tempo para o processo e ele devolverá a par
 Existe o relógio do hardware, que a cada `x` tempo a CPU é interrompida e uma ação é feita. É realizado uma rotina do S.O. uma dessas coisas passíveis de ser feita é pegar a CPU e entregar para outro processo. 
 
 (Intervalo).
+
+
+# Questões
+
+Questão 1
+Considerando as características e os tipos de Sistemas Operacionais:
+O Linux é, desde a versão 2.0: modular
+Resposta 1 capacidade do Sistema Operacional pegar novamente a CPU, mesmo sem a colaboração do aplicativo em execução: preemptivo
+Resposta 2 um kernel com todos os módulos: monolítico
+Resposta 3 O sistema multitarefa do Windows 3.1, 95 e 98: multiusuário
+
+Questão 2
+Ainda não respondida
+Vale 10,00 ponto(s).
+ Não marcadaMarcar questão
+Texto da questão
+O que era o monitor residente?
+Escolha uma:
+-> a. Um embrião do que hoje chamamos de Sistema Operacional. Ele se encarregava de carregar os jobs para a memória e iniciar a execução destes.
+b. Algoritmos para determinar se um job era CPU ou IP Bound
+c. Um gerenciador de sistemas de arquivos baseado no conceito de alocação contigua
+
+Questão 3
+Ainda não respondida
+Vale 5,00 ponto(s).
+ Não marcadaMarcar questão
+Texto da questão
+Quantos bytes tem um setor do disco (também chamado de setor físico)?
+Resposta: 512
+
+Questão 4
+Ainda não respondida
+Vale 5,00 ponto(s).
+ Não marcadaMarcar questão
+Texto da questão
+O Windows 95 possuia um sistema de Time Sharing preemptivo, onde o próprio hardware, através das interrupções, devolve a CPU para o sistema operacional
+Escolha uma opção:
+-> Verdadeiro
+Falso
+
+Questão 5
+Ainda não respondida
+Vale 10,00 ponto(s).
+ Não marcadaMarcar questão
+Texto da questão
+Antes mesmo de qualquer sistemas operacional, os computadores eram operados por painéis, sendo que:
+Escolha uma:
+-> a. Na memória haviam apenas dados, não o código a ser executado
+b. Rotinas comuns aos programas, bem como os compiladores necessários, eram lidos do disco rígido
+c. Quando um programa fazia IO o painel imediatamente começava a executar o próximo JOB
+d. Havia o monitor residente que carregava o os jobs a partir de uma fita, organizando-as por necessidades
+
+Questão 6
+Ainda não respondida
+Vale 10,00 ponto(s).
+ Não marcadaMarcar questão
+Texto da questão
+O monitor residente passou a dar suporte ao conceito de multiprogramação. Este conceito tem como caraceterística:
+Escolha uma:
+a. Executar vários jobs ao mesmo tempo, dano a impressão de que todos estão em execução
+-> b. Executar um processo do início ao fim, mas se ele fizer I/O, escolher um novo para usar a CPU
+c. A implementação do conceito de Time Sharing para processos CPU Bound
+d. uso de um kernel monolítico
+
+
+Questão 7
+Ainda não respondida
+Vale 10,00 ponto(s).
+ Não marcadaMarcar questão
+Texto da questão
+Tipo de kernel de um sistema operacional onde todos os módulos são compilados gerando um único binário:
+Resposta: Monolítico
