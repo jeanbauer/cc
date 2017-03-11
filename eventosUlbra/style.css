@@ -1,0 +1,106 @@
+body {
+  background: #1b1b1b;
+  font-family: 'VT323', monospace;
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+img {
+  border-radius: 50%;
+  width: 70px;
+}
+
+h1 {
+  font-size: 65px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.schedule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lesson {
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.more-about {
+  margin: 0 30px;
+}
+
+.red {
+  border: 1px solid #c0392b;
+  color: #FFF;
+  background: #e74c3c;
+}
+
+.date {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background: #FFF;
+  color: #333;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.enroll {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.enroll:hover {
+  background: #e2e2e2;
+}
+
+.header-container {
+  display: flex;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.header {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-name {
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-name p {
+  margin: 0;
+}
+
+.alizarin { background: #E91E63; }
+
+.amethyst { background: #9b59b6; }
+
+.nephritis { background: #27ae60; }
+
+.turquoise { background: #1abc9c; }
+
+.belize { background: #2980b9; }
