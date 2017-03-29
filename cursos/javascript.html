@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciando no mundo da linguagem mais popular do mundo, Javascript, sem complicação.</title>
+  <link rel="shortcut icon" href="./eventosUlbra/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/highlight.css">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+</head>
+<body class="js">
+  <header class="header">
+    <h1><a href="/">Agenda de eventos</a></h1>
+    <h3><a href="/">Ciência da Computação | Ulbra Gravataí</a></h3>
+  </header>
+  <div class="limiter">
+    <div class="speaker">
+      <div class="avatar">
+        <span class="logo">
+          <img src="./img/js.png" alt="JS">
+        </span>
+        <span class="image">
+          <img src="../eventosUlbra/hackers/palmer.jpg" alt="Palmer" />
+        </span>
+        <span class="logo">
+          <img src="./img/rhino.png" alt="JS">
+        </span>
+      </div>
+      <h2>Palmer Oliveira</h2>
+      <h1>Iniciando no mundo da linguagem mais popular do mundo, <strong>Javascript</strong>, sem complicação.</h1>
+    </div>
+    <section class="section">
+      <h2>Instruções</h2>
+      <p>
+        Breve colocaremos as instruções aqui.
+      </p>
+      <div class="steps">
+        <div class="step">
+          <div class="title">Step1</div>
+          <div class="description">Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="step">
+          <div class="title">Step2</div>
+          <div class="description">Lorem ipsum dolor sit amet.</div>
+          <pre class="javascript"><code>const link = document.createElement('a');
+
+const mul = function(tam) {
+  return function(num) {
+    return tam * num;
+  }
+}
+
+const mulByTwo = mul(2);
+
+link.appendChild(document.createTextNode(mulByTwo(42)));</code></pre>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./js/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

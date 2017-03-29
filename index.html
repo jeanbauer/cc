@@ -95,13 +95,44 @@
             <p>Jean Pinzon</p>
           </div>
         </div>
-        <div class="header">Construindo uma API em Node.js utilizando MongoDB.</div>
+        <div class="header">
+          Construindo uma API em Node.js utilizando MongoDB.
+        </div>
         <div class="header">
           <div class="date"><span>13/04</span></div>
         </div>
         <div class="header">
-          <div class="date enroll"><span>Me Inscrever</span></div>
+          <div class="date enroll"><span>Me Inscrever</span></div>&nbsp;
         </div>
       </div>
     </main>
+    <script>
+      const show = (() => {
+        var ok = false;
+        return () => {
+          if (ok) {
+            return false;
+          }
+          ok = true;
+          ['api-nodejs-mongodb.html', 'html-e-css.html', 'javascript.html']
+          .map(link => {
+            const path = '/cursos/';
+            const e = document.createElement('a');
+            e.setAttribute('href', path + link);
+            e.appendChild(document.createTextNode(link));
+            e.style.display = 'block';
+            e.style.padding = '40px';
+            e.style.color = '#fff';
+            e.style.textAlign = 'center';
+            return e;
+          })
+          .reduce((acc, curr) => {
+            acc.appendChild(curr);
+            return acc;
+          }, document.body);
+        }
+      })();
+      show();
+    </script>
+  </body>
 </html>

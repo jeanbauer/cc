@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Construindo uma API em Node.js utilizando MongoDB</title>
+  <link rel="shortcut icon" href="./eventosUlbra/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/highlight.css">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+</head>
+<body class="nodejs">
+  <header class="header">
+    <h1><a href="/">Agenda de eventos</a></h1>
+    <h3><a href="/">Ciência da Computação | Ulbra Gravataí</a></h3>
+  </header>
+  <div class="limiter">
+    <div class="speaker">
+      <div class="avatar">
+        <span class="logo">
+          <img src="./img/nodejs.png" alt="NodeJS">
+        </span>
+        <span class="image">
+          <img src="../eventosUlbra/hackers/jeanpinzon.jpg" alt="Jean Pinzon" />
+        </span>
+        <span class="logo">
+          <img src="./img/mongodb.png" alt="MongoDB">
+        </span>
+      </div>
+      <h2>Jean Pizon</h2>
+      <h1>Construindo uma API em <strong>Node.js</strong> utilizando <strong>MongoDB</strong>.</h1>
+    </div>
+    <section class="section">
+      <h2>Instruções</h2>
+      <p>
+        Breve colocaremos as instruções aqui.
+      </p>
+      <div class="steps">
+        <div class="step">
+          <div class="title">Step1</div>
+          <div class="description">Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="step">
+          <div class="title">Step2</div>
+          <div class="description">Lorem ipsum dolor sit amet.</div>
+          <pre class="javascript"><code>const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('first node app');
+});</code></pre>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./js/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>
