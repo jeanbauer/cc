@@ -30,31 +30,189 @@
       <h1>Iniciando no mundo da linguagem mais popular do mundo, <strong>Javascript</strong>, sem complicação.</h1>
     </div>
     <section class="section">
-      <h2>Instruções</h2>
+      <h2>Requerimentos</h2>
+
       <p>
-        Breve colocaremos as instruções aqui.
+        Para conseguir acompanhar o curso você precisa:
       </p>
-      <div class="steps">
-        <div class="step">
-          <div class="title">Step1</div>
-          <div class="description">Lorem ipsum dolor sit amet.</div>
-        </div>
-        <div class="step">
-          <div class="title">Step2</div>
-          <div class="description">Lorem ipsum dolor sit amet.</div>
-          <pre class="javascript"><code>const link = document.createElement('a');
 
-const mul = function(tam) {
-  return function(num) {
-    return tam * num;
-  }
-}
+      <h3><strong>1)</strong> Um editor de texto</h3>
+      <p>
+        Por exemplo
+        <a href="https://www.sublimetext.com/3">Sublime</a>
+        <a href="https://atom.io/">Atom</a>
+        <a href="https://code.visualstudio.com/">VSCode</a>
+        <a href="http://brackets.io/">Brakets</a>
+        <a href="http://www.vim.org/download.php">VIM</a>
+      </p>
 
-const mulByTwo = mul(2);
+      <h3><strong>2)</strong> Um browser moderno</h3>
+      <p>
+        Como (chrome, firefox, ie edge, safari).
+      </p>
 
-link.appendChild(document.createTextNode(mulByTwo(42)));</code></pre>
-        </div>
+      <h3><strong>3)</strong> Um servidor web</h3>
+      <p>
+        Como (php, python, nodejs)
+      </p>
+      <div class="important">
+        <p>Se não sabe como fazer isso, nos informe, pois você precisa de um servidor rodando na sua máquina.</p>
+        <p>Caso for usar os computadores da Ulbra, não se preocupe pois vamos deixar prontinho para você.</p>
       </div>
+
+      <h3><strong>4)</strong> Ter conhecimento básico de alguma linguagem de programação</h3>
+      <p>Pelo menos saber usar uma função e fazer algums if, else, for...</p>
+
+
+      <h3><strong>5)</strong> Ler o material de apoio</h3>
+      <p>
+        Abaixo colocamos alguns exemplos daquilo que precisa saber antes de fazer o curso.
+      </p>
+      <div class="important">
+        <p><strong>Isso é importante!</strong> Leia, teste e pratique os exemplos abaixo.</p>
+      </div>
+
+      <hr>
+
+      <div class="example">
+        <h2>Manipulando o DOM</h2>
+        <p>
+          Document Object Model - Criado pelo W3C, O DOM é uma multi-plataforma que representa como as marcações em HTML, XHTML e XML são organizadas e lidas pelo navegador que você usa. Uma vez indexadas, estas marcações se transformam em elementos de uma árvore que você pode manipular via API – que é o que fazemos quando usamos programas ou scripts para alterar funcionalidades de uma página: conteúdo, estrutura ou folha de estilo.
+        </p>
+        <ul>
+          <li><i>fonte:</i> <a href="https://tableless.com.br/tenha-o-dom/">https://tableless.com.br/tenha-o-dom/</a></li>
+        </ul>
+        <pre class="javascript"><code>// pegar um elemento
+  const app = document.getElementById('app');
+  // criar um elemento
+  const spanHello = document.createElement('span');
+
+  // adicionar atributos
+  spanHello.className = 'my-span-class';
+  spanHello.id = 'my-span-id';
+  // criar um nó de texto
+  const text = document.createTextNode('Hello');
+  // adicionar filhos
+  spanHello.appendChild(text);
+  app.appendChild(span);
+
+  const myLink = document.createElement('a');
+  myLink.setAttribute('href', 'http://google.com');
+
+  app.appendChild(myLink);
+
+  // remover filho
+  app.removeChild(myLink);</code></pre>
+      </div>
+
+      <div class="example">
+        <h2>Funções</h2>
+        <pre class="javascript"><code></code></pre>
+      </div>
+
+      <div class="example">
+        <h2>Callbacks</h2>
+        <pre class="javascript"><code></code></pre>
+      </div>
+
+      <div class="example">
+        <h2>Closure</h2>
+        <pre class="javascript"><code></code></pre>
+      </div>
+
+      <div class="example">
+        <h2>ES6 const, let, arrow functions, destructuring assignment</h2>
+        <pre class="javascript"><code></code></pre>
+      </div>
+
+      <div class="example">
+        <h2>Event Listeners</h2>
+        <p>addEventListener() registra uma única espera de evento em um único alvo. O alvo do evento pode ser um único elemento em um documento, o documento em si, uma janela, ou um XMLHttpRequest.</p>
+
+        <p>Para registrar mais de uma espera de evento como alvo, chame addEventListener() para o mesmo alvo mas com diferentes tipos de evento ou captura de parâmetros.</p>
+        <p><i>fonte:</i> <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Element/addEventListener">https://developer.mozilla.org/pt-BR/docs/Web/API/Element/addEventListener</a></p>
+        <pre class="javascript"><code>const input = document.getElementById('myInput');
+
+  input.addEventListener('keyup', event => {
+    console.log(event.target);
+    console.log(event.target.value);
+  });
+
+  const button = document.querySelector('#myButton');
+
+  button.addEventListener('click', event => {
+    console.log(event.target);
+    console.log(event.target.value);
+  });
+  </code></pre>
+      </div>
+
+      <div class="example">
+        <h2>Objetos e Arrays</h2>
+        <p>Segue algumas formas de criar e acessar objetos e arrays.</p>
+        <pre class="javascript"><code>const myArray = [ 'one', 'two', 'three', 'four', 'five' ];
+
+  console.log(myArray[0]);
+
+  const myObject = {
+    name: 'John',
+    age: 50
+  };
+
+  console.log(myObject.name);
+  console.log(myObject['age']);
+
+  const myArrayOfObjects = [
+    { name: 'John' , age: 50 },
+    { name: 'Mary' , age: 45 }
+  ];
+
+  console.log(myArrayOfObjects[0].name);
+  console.log(myArrayOfObjects[0]['name']);</code></pre>
+
+        <ul>
+          <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Trabalhando_com_Objetos">https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Trabalhando_com_Objetos</a></li>
+          <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array">https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array</a></li>
+        </ul>
+      </div>
+
+      <div class="example">
+        <h2>Foreach, Map, Filter e Reduce</h2>
+        <p>Essas funções são extremamente usadas, portando dê uma atenção.</p>
+        <p>Recomendo de fato entrar no blog e dar uma boa olhada e fazendo seus próprios testes. <strong>Reduce</strong> é uma das funções mais ricas, mas também um pouco mais difícil de entender, mas não tema!</p>
+        <pre class="javascript"><code>const data = [
+  { name: 'Galadriel', race: 'Elves', weapons: [ 'Elven Magic', 'Nenya' ] },
+  { name: 'Legolas', race: 'Elves', weapons: [ 'Bow', 'Knife' ] },
+  { name: 'Gandalf', race: 'Maiar', weapons: [ 'Glamdring', 'Wizard Staff', 'Sword' ] },
+  { name: 'Radagast', race: 'Maiar', weapons: [ 'Powers of the Maiar', 'Wizard Staff' ] },
+  { name: 'Aragorn', race: 'Men', weapons: [ 'Anduril', 'Sword' ] },
+  { name: 'Sauron', race: 'Ainur', weapons: [ 'One Ring', 'Sword', 'Powers of the Maiar' ] },
+  { name: 'Faramir', race: 'Men', weapons: [ 'Bow', 'Sword' ] }
+];
+
+// mostrar os nomes
+data.forEach(item => {
+  console.log(item.name);
+});
+
+const getNames = data.map(item => item.name);
+console.log(getNames);
+
+const filterOnlyTheElves = data.filter(item => item.race === 'Elves');
+console.log(filterOnlyTheElves);
+
+const countTheWeapons = data.reduce((acc, item) => {
+  acc += item.weapons.length;
+}, 0);
+
+console.log(countTheWeapons);</code></pre>
+        <ul>
+          <li><a href="http://expalmer.github.io/criando-seu-proprio-array-foreach-array-map-e-array-filter-em-javascript/">http://expalmer.github.io/criando-seu-proprio-array-foreach-array-map-e-array-filter-em-javascript/</a></li>
+          <li><a href="http://expalmer.github.io/criando-seu-proprio-array-reduce-em-javascript/">http://expalmer.github.io/criando-seu-proprio-array-reduce-em-javascript/</a></li>
+          <li><a href="https://www.youtube.com/watch?v=P9mAnhNFKO4">ESSE VÍDEO É DEMAIS!</a></li>
+        </ul>
+      </div>
+
     </section>
   </div>
   <script src="./js/highlight.pack.js"></script>
