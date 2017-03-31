@@ -65,10 +65,10 @@
         </div>
         <div class="header">Aprendendo o básico de HTML e CSS, com noções de UX e acessibilidade.</div>
         <div class="header">
-          <div class="date"><span>01/04</span></div>
+          <div class="date"><span>29/04</span></div>
         </div>
         <div class="header">
-          <div class="date enroll"><span>Me Inscrever</span></div>
+          <a href="./cursos/html-e-css.html" class="date enroll"><span>Me Inscrever</span></a>
         </div>
       </div>
 
@@ -81,10 +81,26 @@
         </div>
         <div class="header">Iniciando no mundo da linguagem mais popular do mundo, Javascript, sem complicação.</div>
         <div class="header">
-          <div class="date"><span>06/04</span></div>
+          <div class="date"><span>06/05</span></div>
         </div>
         <div class="header">
-          <div class="date enroll"><span>Me Inscrever</span></div>
+          <a href="./cursos/javascript.html" class="date enroll"><span>Me Inscrever</span></a>
+        </div>
+      </div>
+
+      <div class="header-container orange">
+        <div class="header">
+          <div class="header-name">
+            <img src="./eventosUlbra/hackers/edersoares.jpg" alt="Eder Soares" />
+            <p>Éder Soares</p>
+          </div>
+        </div>
+        <div class="header">Construindo uma API em PHP utilizando MySQL.</div>
+        <div class="header">
+          <div class="date"><span>13/05</span></div>
+        </div>
+        <div class="header">
+          <a href="./cursos/php-e-mysql.html" class="date enroll"><span>Me Inscrever</span></a>
         </div>
       </div>
 
@@ -99,39 +115,72 @@
           Construindo uma API em Node.js utilizando MongoDB.
         </div>
         <div class="header">
-          <div class="date"><span>13/04</span></div>
+          <div class="date"><span>20/05</span></div>
         </div>
         <div class="header">
-          <div class="date enroll"><span>Me Inscrever</span></div>&nbsp;
+          <a href="./cursos/nodejs-e-mongodb.html" class="date enroll"><span>Me Inscrever</span></a>
         </div>
       </div>
+
+      <div class="header-container blue">
+        <div class="header">
+          <div class="header-name">
+            <img src="./eventosUlbra/hackers/cristhianbicca.jpg" alt="Christian Bicca" />
+            <p>Cristhian Bicca</p>
+          </div>
+        </div>
+        <div class="header">Primeiros passos no Mundo Docker.</div>
+        <div class="header">
+          <div class="date"><span>27/05</span></div>
+        </div>
+        <div class="header">
+          <a href="./cursos/docker.html" class="date enroll"><span>Me Inscrever</span></a>
+        </div>
+      </div>
+
+      <div class="header-container react">
+        <div class="header">
+          <div class="header-name">
+            <img src="./eventosUlbra/hackers/jeanbauer.jpg" alt="" />
+            <p>Jean Bauer</p>
+          </div>
+        </div>
+        <div class="header">Começando com ReactJs, o famoso framework do Facebook.</div>
+        <div class="header">
+          <div class="date"><span>03/06</span></div>
+        </div>
+        <div class="header">
+          <a href="./cursos/reactjs.html" class="date enroll"><span>Me Inscrever</span></a>
+        </div>
+      </div>
+
     </main>
     <script>
-      const show = (() => {
-        var ok = false;
-        return () => {
-          if (ok) {
-            return false;
-          }
-          ok = true;
-          ['api-nodejs-mongodb.html', 'html-e-css.html', 'javascript.html']
-          .map(link => {
-            const path = '/cursos/';
-            const e = document.createElement('a');
-            e.setAttribute('href', path + link);
-            e.appendChild(document.createTextNode(link));
-            e.style.display = 'block';
-            e.style.padding = '40px';
-            e.style.color = '#fff';
-            e.style.textAlign = 'center';
-            return e;
-          })
-          .reduce((acc, curr) => {
-            acc.appendChild(curr);
-            return acc;
-          }, document.body);
-        }
-      })();
+      // const show = (() => {
+      //   var ok = false;
+      //   return () => {
+      //     if (ok) {
+      //       return false;
+      //     }
+      //     ok = true;
+      //     ['api-nodejs-mongodb.html', 'html-e-css.html', 'javascript.html']
+      //     .map(link => {
+      //       const path = '/cursos/';
+      //       const e = document.createElement('a');
+      //       e.setAttribute('href', path + link);
+      //       e.appendChild(document.createTextNode(link));
+      //       e.style.display = 'block';
+      //       e.style.padding = '40px';
+      //       e.style.color = '#fff';
+      //       e.style.textAlign = 'center';
+      //       return e;
+      //     })
+      //     .reduce((acc, curr) => {
+      //       acc.appendChild(curr);
+      //       return acc;
+      //     }, document.body);
+      //   }
+      // })();
     </script>
   </body>
 </html>

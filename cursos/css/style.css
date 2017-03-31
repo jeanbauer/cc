@@ -175,3 +175,12 @@ pre {
 
 .js .header { background: #9b59b6; }
 .js .speaker h1 { color: #9b59b6; }
+
+.docker .header { background: #039bc6; }
+.docker .speaker h1 { color: #039bc6; }
+
+.php .header { background: #ef6e2a; }
+.php .speaker h1 { color: #ef6e2a; }
+
+.react .header { background: #3f51b5; }
+.react .speaker h1 { color: #3f51b5; }
