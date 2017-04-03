@@ -107,22 +107,131 @@
 
       <div class="example">
         <h2>Funções</h2>
-        <pre class="javascript"><code></code></pre>
+        <p>
+          As funções em Javascript são <strong>First Class Functions</strong>, ou seja, funções podem ser passadas como argumentos
+          para outras funções, podem ser retornadas de outras funções, podem ser atribuidas a variáveis e serem armazenadas em qualquer estrutura de dados como arrays e objetos.
+          Meio confuso? Não se preocupe, com o tempo se tornar mais claro.
+        </p>
+        <p>Abaixo segue algumas formas de invocar funções.</p>
+        <pre class="javascript"><code>function sayHello(name) {
+  return 'Hello, ' + name;
+}
+
+sayHello('John');
+
+var sayHello = function(name) {
+  return 'Hello, ' + name;
+}
+// atribui uma função a variavel, e a mesma retorna outra função
+var makeHello = function(name) {
+  return function() {
+    return 'Hello, ' + name;
+  }
+}
+
+var helloJohn = makeHello('John');
+var helloMark = makeHello('Mark');
+
+helloJohn();
+helloMark();
+</code></pre>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/First-class_function">https://en.wikipedia.org/wiki/First-class_function</a></li>
+          <li><a href="http://blog.da2k.com.br/2015/01/30/javascript-como-invocar-funcoes/">http://blog.da2k.com.br/2015/01/30/javascript-como-invocar-funcoes/</a></li>
+        </ul>
       </div>
 
       <div class="example">
         <h2>Callbacks</h2>
-        <pre class="javascript"><code></code></pre>
+        <p>Callback é um padrão (pattern) onde uma função recebe outra função que será chamada postetiormente em um momento apropriado.
+        Essencialmente criado par alidar com a natureza assíncrona do Javascript.</p>
+        <p>Você irá ver esse padrão em todo lugar quando começar a usar Javascript.</p>
+        <pre class="javascript"><code>var shouldCall = true;
+
+var myCallback = function() {
+  console.log('Serei chamado quando a outra função quiser :P');
+}
+
+function printNames(shouldCall, callback) {
+  if (shouldCall) {
+    callback();
+  }
+  console.log(':P');
+}
+
+printNames(shouldCall, myCallback);
+
+</code></pre>
+        <ul>
+          <li><a href="https://tableless.com.br/fluxo-de-execucao-assincrono-em-javascript-callbacks/">https://tableless.com.br/fluxo-de-execucao-assincrono-em-javascript-callbacks/</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_and_Using_Callbacks">https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_and_Using_Callbacks</a></li>
+        </ul>
       </div>
 
       <div class="example">
         <h2>Closure</h2>
-        <pre class="javascript"><code></code></pre>
+        <p>Closures são funções que se referem a variáveis livres (independentes). Em outras palavras, a função definida no closure "lembra" do ambiente em que ela foi criada.</p>
+        <pre class="javascript"><code>function sayHello() {
+  var say = function() { console.log(hello); }
+  var hello = 'Hello, world!';
+  return say;
+}
+var sayHelloClosure = sayHello();
+sayHelloClosure(); // ‘Hello, world!’
+
+// Outro exemplo
+var x = 10;
+function foo() {
+  var y = 20; // free variable
+  function bar() {
+    var z = 15; // free variable
+    return x + y + z;
+  }
+  return bar;
+}</code></pre>
+        <ul>
+          <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Closures">https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Closures</a></li>
+          <li><a href="https://medium.freecodecamp.com/lets-learn-javascript-closures-66feb44f6a44">https://medium.freecodecamp.com/lets-learn-javascript-closures-66feb44f6a44</a></li>
+        </ul>
       </div>
 
       <div class="example">
-        <h2>ES6 const, let, arrow functions, destructuring assignment</h2>
-        <pre class="javascript"><code></code></pre>
+        <h2>Novas Features</h2>
+        <p>O Javascript foi criado através das especificações da ECMAScript, várias alterações/inclusões na sintaxe da linguagem ocorreram,
+        portanto vou colocar abaixo algumas que iremos usar no nosso curso.</p>
+        <pre class="javascript"><code>// const, let
+var name = 'palmer';
+var age = 35;
+age = 36;
+
+// novo
+const name = 'Palmer';
+let age = 35;
+age = 36;
+
+// Template strings
+const name = 'Roberbo';
+const myName = 'My name is ' + name;
+
+// novo
+const myName = `My name is ${name}`;
+
+// arrow functions
+function hello(name) {
+  return 'my name is ' + name;
+}
+
+// novo
+const hello = name => `my name is ${name}`;
+
+// Destructuring assignment
+const person = { name: 'Matias', age: 34, points: 450 };
+const name = person.name;
+const age = person.age;
+const points = person.points;
+
+// novo
+const { name, age, points } = person;</code></pre>
       </div>
 
       <div class="example">
