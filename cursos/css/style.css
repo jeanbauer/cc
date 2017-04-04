@@ -87,7 +87,7 @@ hr {
 }
 
 .avatar .logo {
-  display: flex;
+  display: block;
   padding-top: 10px;
   width: 130px;
   float: left;
@@ -113,7 +113,7 @@ hr {
 }
 
 .section {
-  padding-bottom: 100px;
+  padding: 12px 12px 100px;
 }
 
 .section h2 {
@@ -234,3 +234,34 @@ pre {
 .react .header { background: #3f51b5; }
 .react .speaker,
 .react .example a { color: #3f51b5; }
+
+
+@media (max-width: 400px){
+  .speaker {
+    padding: 40px 12px 0px;
+  }
+  .speaker h1 {
+    font-size: 1.5em;
+  }
+  .avatar {
+    height: 80px;
+    width: 270px;
+    margin-left: -135px;
+  }
+  .avatar .logo {
+    padding-top: 18px;
+    width: 100px;
+  }
+  .avatar .image {
+    width: 90px;
+    height: 90px;
+    top:-3px;
+    margin-left: -45px;
+  }
+  
+  ul li a {
+    word-wrap: break-word;
+    /*overflow-y: auto;*/
+  }
+
+}
