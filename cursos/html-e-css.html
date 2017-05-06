@@ -34,13 +34,50 @@
 
       <h2>Instruções</h2>
 
-      <p>Aguarde</p>
+      <p>Bem-vinda(o) ao curso de HTML e CSS.</p>
+      <p>Toda página web é escrita em uma linguagem chamada HTML.
+        Você pode pensar em HTML como um esqueleto que dá estrutura a todas as páginas.
+        Neste curso, vamos usar HTML para adicionar parágrafos, cabeçalhos,
+        imagens e links a uma página.</p>
 
       <hr>
 
       <div class="example">
         <h2>HTML</h2>
-        <p>Definição</p>
+        <p>
+        HTML e CSS
+        HTML significa HyperText Markup Language. Hypertext (hipertexto) significa "texto que contém links." Sempre que você clicar em uma palavra que te leve a uma nova página, você clicou em um hipertexto!
+
+        Uma markup language (linguagem de marcação) é uma linguagem de programação usada para fazer com que o texto faça mais do que simplesmente ficar parado em uma página: ela pode transformar textos em imagens, links, tabelas, listas, e muito mais. HTML é a linguagem que vamos aprender.
+
+        O que deixa uma página web bonita? É o CSS — Cascading Style Sheets (Folhas de Estilo em Cascata). Pense nele como a pele e a maquiagem que cobre os ossos de HTML. Vamos aprender HTML primeiro, e vamos nos preocupar com CSS nas aulas futuras.
+
+        A primeira coisa que devemos fazer é configurar o esqueleto da página.
+        </p>
+
+        <p>a. Sempre coloque DOCTYPE. Isso diz ao navegador que linguagem ele está lendo.</p>
+        <pre class="html"><code>&lt;!DOCTYPE html&gt;</code></pre>
+
+        <p>b. Sempre coloque HTML. na próxima linha. Isso dá início ao documento HTML.</p>
+        <pre class="html"><code>&lt;html&gt;</code></pre>
+
+        <p>c. Sempre coloque /HTML. na última linha. Isso determina o fim do documento HTML.</p>
+        <pre class="html"><code>&lt;/html&gt;</code></pre>
+        
+        <h2>Terminologia básica</h2>
+        
+      <p>Para aprender mais sobre HTML, devemos aprender a falar sobre HTML. Você já nos viu usar um monte de <>s.</p>
+      <pre class="html"><code>&lt;&gt;</code></pre>
+      <p>As coisas dentro de <>s são chamadas de tags.
+      Tags geralmente são colocadas em pares: uma tag de abertura, e uma tag de fechamento.</p>
+      Exemplo de tag de abertura: 
+      <pre class="html"><code>&lt;html&gt;</code></pre>
+      Exemplo de tag de fechamento: </html>
+      <pre class="html"><code>&lt;/html&gt;</code></pre>
+
+
+      <h2>Exemplo de uma página completa</h2>
+
         <pre class="html"><code>&lt;!DOCTYPE html&gt;
     &lt;html lang=&quot;en&quot;&gt;
       &lt;head&gt;
@@ -53,9 +90,29 @@
       &lt;/body&gt;
     &lt;/html&gt;</code></pre>
         <ul>
-          <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">https://developer.mozilla.org/pt-BR/docs/Web/HTML</a></li>
+          <li>Mais informações: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">https://developer.mozilla.org/pt-BR/docs/Web/HTML</a></li>
         </ul>
       </div>
+
+      <h2>O que é CSS</h2>
+      <p>
+        CSS (que é a sigla para Cascading Style Sheets) é a linguagem usada para descrever a aparência e a formatação do seu arquivo HTML.
+        Uma style sheet (folha de estilo) é um arquivo que descreve como um arquivo HTML deve ser visualmente. É isso!
+        Dizemos que essas folhas estão em modo cascading (cascata) porque as folhas podem aplicar a formatação para mais de um estilo. Por exemplo, se você disser que todos os parágrafos devem ter fonte de cor azul, mas você especifica um único parágrafo para ter fonte da cor vermelha, a linguagem CSS faz!
+      </p>
+
+      <h2>Dicas</h2>
+      <ul>
+        <li><a href="https://www.codecademy.com/pt-BR/learn/web">HTML/CSS - Curso CodeCademy (free)</a>
+        <li><a href="http://htmlreference.io/">HTML - Referências</a>
+        <li><a href="https://flatuicolors.com/">UX - Cores</a></li>
+        <li><a href="https://venture-theme-snowboards.myshopify.com/">CSS - Exemplo de site feito com FlexBox</a></li>
+        <li><a href="https://flexboxfroggy.com/">CSS - Aprender flexbox jogando (sapo)</a></li>
+        <li><a href="http://www.flexboxdefense.com/">CSS - Aprender flexbox jogando (torres)</a></li>
+        <li><a href="https://pt.slideshare.net/reinaldoferraz/acessibilidade-na-web-construndo-pginas-para-pessoas-e-no-s-para-mquinas">ACESSIBILIDADE - Guia</a></li>
+      </ul>
+      
+      
     </section>
   </div>
   <script src="./js/highlight.pack.js"></script>
