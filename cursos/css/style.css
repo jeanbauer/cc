@@ -235,6 +235,10 @@ pre {
 .react .speaker,
 .react .example a { color: #3f51b5; }
 
+.bitcoin .header { background: #e68509; }
+.bitcoin .speaker,
+.bitcoin .example a { color: #e68509; }
+
 
 @media (max-width: 400px){
   .speaker {
@@ -258,7 +262,7 @@ pre {
     top:-3px;
     margin-left: -45px;
   }
-  
+
   ul li a {
     word-wrap: break-word;
     /*overflow-y: auto;*/
