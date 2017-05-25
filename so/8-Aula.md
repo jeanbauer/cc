@@ -110,3 +110,40 @@ PAG | FRAME | Valido ou Invalido
 0 em Valido ou Invalido significa que não está na memória, ai o S.O. vai carregar.
 
 Caso ele tente acessar a pag 5 ai realmente não vai ter, é invalido, o S.O. que vai saber.
+
+
+Frame na memória.
+
+E se todos os frames estiverem ocupados?
+Ai o S.O. tem a incubencia de escolher uma pagina como vitima, que vai deixar a memoria e ir para o disco. :scream:
+
+:dart: Como ele faz essa escolha?!
+Há vaaaarias maneiras.
+Mas a melhor seria uma pagina que nao será mais usada. Para descobrir isso, usamos algoritmos de aproximação.
+
+Quanto menor o numero de page fault melhor é o algorimo.
+
+Digamos que nós temos uma memória de 3 Frames.
+
+```
+Ordem:          -> futuro
+[4][5][6][8]...  [5][6][8][9][10]
+-----------------------------
+FR 0 | 4 |  4 |  4  | 8¹| 8 | 8 | 8 | 8 | 8
+FR 1 |   |  5 |  5  | 5 | 5 | 5 | 5 | 9 | 9
+FR 2 |   |    |  6  | 6 | 6 | 6 | 6 | 6 |10
+       X    X    X    X               X   X
+
+¹ A pagina 8 entrou no lugar do 4.
+```
+
+Vamos ver como o FIFO se sai:
+```
+Ordem:          
+[4][5][6][8][5][6][8][9][10]
+-----------------------------
+FR 0 | 4 |  4 |  4  | 8 | 8 | 8 | 8 | 8
+FR 1 |   |  5 |  5  | 5 | 5 | 5 | 9 | 9
+FR 2 |   |    |  6  | 6 | 6 | 6 | 6 | 10
+       X    X    X    X           X    X
+```
