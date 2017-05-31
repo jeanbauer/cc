@@ -147,3 +147,10 @@ FR 1 |   |  5 |  5  | 5 | 5 | 5 | 9 | 9
 FR 2 |   |    |  6  | 6 | 6 | 6 | 6 | 10
        X    X    X    X           X    X
 ```
+
+
+Correção do T22:
+DIR     -  N pag   - desl
+5 bits  |  7 bits  |  8 bits
+
+
