@@ -1,7 +1,6 @@
 # Processos
 
 Processo possui estado
-  - arto (???)
   - em execução
   - bloqueado
   - etc
