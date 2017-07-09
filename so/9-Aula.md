@@ -42,6 +42,8 @@ Hardware interrompe processo e devolve p/ o processador.
 #### SJF
 > Short job first, ou seja, menor processo vai primeiro. Mas o que é menor? Há! Quantos ciclos de necessidade tem.
 
+Porém isso só serve para a carga inicial do processo, ou seja, se tivermos 3 processos e o p1 fizer I/O ele vai para o final da fila.
+
 ## Preemptivo
 Só com ajuda do hardware. Tem um timer (relógio) que quando se esgota, devolve a CPU. 
 
