@@ -65,6 +65,7 @@ UCP (usuario) = processador
 
 ### interrompível nao preemptivo
 > Ou seja, volta pro processo que estava executando.
+
 | nao preemptivo   | | | | | | | | |¹| | | | | | | |¹| | | | | |¹| | | | |¹| | | | | |
 | ---------------- |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 | UCP (usuario)    |a|a|a|a| | |b|b|b| | |a|a| | |b| | | | |a|a| | | | |b|b| | |a|a|b|
@@ -73,6 +74,7 @@ UCP (usuario) = processador
 
 ### interrompivel preemptivo
 > Mais rapido
+
 | preemptivo       | | | | | | | | |¹| | | | | | | |¹| | | | | |¹| | | | |¹| | | | | |
 | ---------------- |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 | UCP (usuario)    |a|a|a|a| | |b|b|b| | |a|a| | |b| | | |a|a| | | | | |a| | |a|b|b|b|
